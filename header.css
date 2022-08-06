@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+@keyframes menu_item_hover_animation {
+	from {
+		margin-bottom: auto;
+		background-color: rgba(1, 20, 47, 0.6);
+		color: mintcream;
+	}
+	to {
+		margin-bottom: 1px;
+		background-color: rgba(255, 255, 255, 0.3);
+		color: black;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #01142F;
+}
+
+header {
+	background-color: #5b60c7;
+	height: 50px;
+	width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: row;
+}
+
+.header_img{
+	width: 20%;
+	height: 100%;
+	background-image: url(./images/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+header hr {
+	height: 80%;
+	width: 1px;
+	border-radius: 2px;
+	background-color: #FFC11E;
+}
+
+nav {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nav_item {
+	min-width: 12%;
+	min-height: 60%;
+	margin: auto 5%;
+	padding-top: 0.2rem;
+	color: mintcream;
+	background-color: rgba(1, 20, 47, 0.6);
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 100%;
+}
+
+.nav_item:hover {
+	background-color: rgba(255, 255, 255, 0.3);;
+	color: black;
+	margin-bottom: 1px;
+	animation-name: menu_item_hover_animation;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	transition: 0.2s;
+}
+
+@media all and (max-aspect-ratio: 13/10) {
+
+	.main_page {
+		background-image: url(./images/menu/home.svg);
+	}
+
+	.shop_page {
+		background-image: url(./images/menu/shop.svg);
+	}
+
+	.server_page {
+		background-image: url(./images/menu/minecraft.svg);
+	}
+
+	.news_page {
+		background-image: url(./images/menu/news.svg);
+	}
+
+	.nav_item, .nav_item:hover {
+		font-size: 0pt;
+		height: 50%;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		animation: none;
+	}
+
+	.header_img, header hr {
+		display: none;
+	}
+
+	header {
+		height: 8vh;
+	}
+}
+
+
+#water {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+

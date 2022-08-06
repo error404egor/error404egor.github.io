@@ -1,0 +1,25 @@
+.hello {
+	background-image: url(./images/tailer_derden.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	width: 100%;
+	height: 100vh;
+	line-height: 161%;
+	text-align: center;
+	font-size: 40pt;
+	color: darkmagenta;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.animated {
+	opacity: 1;
+}
+
+.about {
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(195, 0, 255);
+}
