@@ -1,6 +1,6 @@
 function doArrive(element, elementHeight, elementTop) {
   var windowHeight = window.innerHeight;
-  elementVisible = windowHeight * 0.45;
+  elementVisible = windowHeight * 0.3;
   element.style.opacity = checkPosition(elementHeight, elementTop, elementVisible)[1]
 }
 
