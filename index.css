@@ -1,3 +1,8 @@
+
+body {
+	overflow-x: hidden;
+}
+
 .hello {
 	background-image: url(./images/tailer_derden.png);
 	background-repeat: no-repeat;
@@ -7,7 +12,7 @@
 	height: 100vh;
 	line-height: 161%;
 	text-align: center;
-	font-size: 40pt;
+	font-size: 10vw;
 	color: darkmagenta;
 	display: flex;
 	align-items: center;
@@ -38,4 +43,16 @@
 	width: 70%;
 	height: 100%;
 	background-color: rgb(195, 0, 255);
+	font-size: 3vw;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+}
+
+.about_item a{
+	text-decoration: none;
+	text-shadow: 0.4vw 0.4vh 0px rgb(108, 93, 221);
+	color: rgb(0, 255, 34);
 }
