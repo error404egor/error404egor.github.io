@@ -21,6 +21,8 @@ img {
 	height: auto;
 }
 
+body, html {overflow-x: hidden;}
+
 html {font-size: 4px;}
 
 :link, :visited { text-decoration:none }
