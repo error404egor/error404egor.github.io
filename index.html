@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./root.css">
 	<link rel="stylesheet" type="text/css" href="./header.css">
 	<link rel="stylesheet" type="text/css" href="./index.css">
 	<title>Главная</title>
 </head>
 <body>
-	<header>
-		<div class="header_img"></div>
+	<header id="header">
+		<a href="https://vk.com/gtamodiki11" class="header_img"></a>
 		<hr/>
 		<nav>
 			<a href="" class="nav_item main_page">Главая</a>
@@ -18,13 +19,66 @@
 			<a href="" class="nav_item news_page">Новости</a>
 		</nav>
 	</header>
-	<h1 class="hello animated_opacity">Клим приветствует тебя!</h1>
-	<div class="about">
-		<div class="port_container"><div class="animated_opacity right_arrive about_item">Новые мемы почти раз в две недели!</div></div>
-		<div class="port_container"><div class="animated_opacity left_arrive about_item">Сервер созраняет высокий тпс даже при игре двух человек одновременно!</div></div>
-		<div class="port_container"><div class="animated_opacity right_arrive about_item">На наш паблик подписанна <a target="_blank" href="https://vk.com/itkatnz">Катя Скалли!</a></div></div>
-	</div>
-	<div class="hello animated_opacity"></div>
-	<script src="./index.js"></script>
+	<main>
+		<section style="margin-bottom: 30%">
+			<h1 class="hello animated_opacity">Клим приветствует тебя!</h1>
+		</section>
+		<div class="about">
+			<div class="port_container">
+				<div class="animated_opacity right_arrive about_item animated_shadow">
+					<p>Новые мемы почти раз в <mark>две недели!</mark></p>
+				</div>
+				<div class="animated_opacity about_item_little top_arrive animated_shadow" style="background-image: url(./images/emoji/haha.svg);"></div>
+			</div>
+			<div class="port_container">
+				<div class="animated_opacity about_item_little bottom_arrive animated_shadow" style="background-image: url(./images/emoji/cool.svg); left: 70%;"></div>
+				<div class="animated_opacity left_arrive about_item animated_shadow">
+					<p>Сервер сохраняет <mark>высокий TPS</mark> даже при игре двух человек одновременно!</p>
+				</div>
+			</div>
+			<div class="port_container">
+				<div class="animated_opacity right_arrive about_item animated_shadow">
+					<p>На наш паблик подписанна <a target="_blank" href="https://vk.com/itkatnz">Катя Скалли!</a></p>
+				</div>
+				<div class="animated_opacity about_item_little top_arrive animated_shadow" style="background-image: url(./images/emoji/star.svg);"></div>
+			</div>
+		</div>
+		<div class="history">
+			<h1 class="history_title animated_text_shadow">Немного о нашей истории:</h1>
+			<div class="port_container"><div class="animated_opacity top_arrive history_item animated_shadow" style="z-index: 1;">
+				<p>29 августа 2019 года группа была создана. Также появилась всем знакомая и любимая аватарка сообщества. 25 августа вышел первый мод. 7 сентября вышел мод про зомби, ставший последним модом на гта в этом сообществе.</p>
+			</div></div>
+			<div class="port_container"><div class="animated_opacity top_arrive history_item animated_shadow" style="z-index: 2;">
+				<p>В то же время, паблик уже выкладывал мемы, но сильной ценности они не несли. 7 сентября был выложен первый мем про школу, а 27 сентября <a href="https://vk.com/chozirish1111">Екатерина Cамойлова</a> впервые оставила комментарий на нашем посте.</p>
+			</div></div>
+			<div class="port_container"><div class="animated_opacity top_arrive history_item animated_shadow" style="z-index: 3;">
+				<p>Потом начался длинный промежуток процветания группы. Было много мемеов про школу, шип шип и многие другие интересные темы. Именно в эту эпоху Ермак поздравлял нас с каникулами! В те времена Саша Мамлеев был Путиным!</p>
+			</div></div>
+			<div class="port_container"><div class="animated_opacity history_item animated_shadow" style="z-index: 4;">
+				<p>16 января Клим в первый раз был упомянут на страничке сообщества, 17 января был выложен его первый пост! Первый мем Клима, вероятно, был удален, дата первого мема Клима в ленте - 22 февраля 2022 года. В начале Клима не понимали, но он не сдавался и в итоге получил уважение от подписчиков. 25 июня Клим стал владельцем паблика.</p>
+			</div></div>
+		</div>
+		<div class="main_rule">
+			<div class="quote animated_opacity animated_shadow">
+				<h2 class="right_arrive">Мем говно как с технической так и с смысловой точки зрения, но удалять я его конечно не буду.</h2>
+				<h3>- Клим Майзовский</h3>
+			</div>
+			<div class="port_container animated_opacity animated_shadow">
+				<p class="main_rule_text right_arrive">Наше главное правило - свобода слова. Мы не любим границы и не ставим их своим подписчикам!</p>
+			</div>
+		</div>
+		<div class="video">
+			<video controls loop>
+			<source src="videos/advertisement.mp4" type='video/mp4'>
+			<source src="videos/advertisement.waw" type='video/waw'>
+			Тег video не поддерживается вашим браузером.
+			</video>
+		</div>
+	</main>
+	<footer>
+		<a href="https://vk.com/gtamodiki11">Modi Na GTA&reg</a>
+	</footer>
+	<script src="./animations.js"></script>
+	<script src="./hiding_header.js"></script>
 </body>
 </html>

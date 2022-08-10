@@ -12,38 +12,45 @@ body {
 	height: 100vh;
 	line-height: 161%;
 	text-align: center;
-	font-size: 10vw;
-	color: darkmagenta;
+	font-size: 5rem;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: var(--second_color_dark);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.animated {
-	opacity: 1;
+.port_container {
+	height: 20%;
+	position: relative;
 }
 
-.about {
-	height: 100vh;
-	width: 100%;
+.about, .history {
+	margin-bottom: 30%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: column;
 }
 
-.port_container {
-	height: 20%;
-	width: 100%;
-	position: relative;
+.about {
+	height: 100vh;
 }
 
-.about_item {
+.history {
+	height: 250vh;
+}
+
+.about .port_container {
+	width: 100%;
+}
+
+.about_item, .about_item_little {
 	position: absolute;
-	width: 70%;
 	height: 100%;
-	background-color: rgb(195, 0, 255);
-	font-size: 3vw;
+	background-color: var(--second_color);
+	font-size: 2rem;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -51,8 +58,111 @@ body {
 	border-radius: 20px;
 }
 
-.about_item a{
+.about_item {
+	width: 60%;
+}	
+
+.about_item_little {
+	width: 30%;
+	background-repeat: no-repeat;
+	background-size: 100% contain;
+	background-position: center;
+	z-index: -1;
+}
+
+.about_item a, .history_item a, .about_item mark {
 	text-decoration: none;
-	text-shadow: 0.4vw 0.4vh 0px rgb(108, 93, 221);
+	background-color: transparent;
 	color: rgb(0, 255, 34);
+}
+
+.history > .port_container {
+	width: 80%;
+}
+
+.history_title {
+	text-align: center;
+	margin-bottom: 10%;
+	color: white;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 5rem;
+}
+
+.history_item {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	padding: 0px 10%;
+	border-radius: 5rem;
+	background-color: var(--main_color_light);
+	font-size: 1.6rem;
+	font-family: 'Comfortaa', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.quote {
+	width: 100%;
+	margin: 2rem auto;
+	background-color: var(--second_color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.quote > h2 {
+	width: 50%;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 500;
+	height: fit-content;
+	position: relative;
+}
+
+.quote > h2::after {
+	content: "\201D";
+	font-size: 3rem;
+	position: absolute;
+	right: -1rem;
+}
+
+.quote > h2::before {
+	content: "\201C";
+	font-size: 3rem;
+	position: absolute;
+	left: -1rem;
+}
+
+.quote > h3 {
+	width: 90%;
+	text-align: right;
+	margin-bottom: 30px;
+}
+
+.main_rule .port_container {
+	background-color: var(--second_color);
+}
+
+.main_rule_text {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.main_rule {
+	margin-bottom: 20vh;
+}
+
+.video {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	margin-bottom: 10vh;
+}
+
+video {
+	height: 100%;
+	max-width: 100%;
 }

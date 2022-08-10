@@ -1,23 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
-
 @keyframes menu_item_hover_animation {
 	from {
-		margin-bottom: auto;
 		background-color: rgba(1, 20, 47, 0.6);
-		color: mintcream;
+		color: white;
 	}
 	to {
-		margin-bottom: 1px;
 		background-color: rgba(255, 255, 255, 0.3);
 		color: black;
 	}
-}
-
-* {
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
 }
 
 body {
@@ -25,9 +14,20 @@ body {
 	background-color: #01142F;
 }
 
+
+main {
+	margin-top: 50px;
+}
+
 header {
+	position: fixed;
+}
+
+header, footer {
+	top: 0;
+	z-index: 10000;
 	background-color: #5b60c7;
-	height: 50px;
+	height: 10vh;
 	width: 100%;
   	display: flex;
   	justify-content: center;
@@ -64,23 +64,29 @@ nav {
 	min-width: 12%;
 	min-height: 60%;
 	margin: auto 5%;
-	padding-top: 0.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: mintcream;
 	background-color: rgba(1, 20, 47, 0.6);
-	border-radius: 10px;
+	border-radius: 10% 10% 10% 10% / 30% 30% 30% 30%;
 	text-align: center;
-	text-decoration: none;
-	font-size: 100%;
+	font-size: 1rem;
 }
 
 .nav_item:hover {
 	background-color: rgba(255, 255, 255, 0.3);;
 	color: black;
-	margin-bottom: 1px;
 	animation-name: menu_item_hover_animation;
 	animation-duration: 0.7s;
 	animation-timing-function: ease-out;
 	transition: 0.2s;
+	transform: scale(1.1);
+}
+
+footer > a {
+	font-size: 1rem;
+	color: white;
 }
 
 @media all and (max-aspect-ratio: 13/10) {
@@ -102,7 +108,7 @@ nav {
 	}
 
 	.nav_item, .nav_item:hover {
-		font-size: 0pt;
+		font-size: 0rem;
 		height: 50%;
 		margin: auto;
 		background-repeat: no-repeat;
@@ -114,15 +120,11 @@ nav {
 		display: none;
 	}
 
-	header {
+	header, footer {
 		height: 8vh;
 	}
+
+	main {
+		margin-top: 8vh;
+	}
 }
-
-
-#water {
-	grid-row: 1 / 2;
-	grid-column: 1 / 2;
-}
-
-

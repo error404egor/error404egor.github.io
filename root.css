@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Sans+Pro:wght@600&family=Yanone+Kaffeesatz:wght@700&display=swap');
+
+:root {
+    --main_color: #5b60c7;
+    --second_color: rgb(195, 0, 255);
+    --main_color_dark: #01142F;
+    --second_color_dark: darkmagenta;
+    --main_color_light: #7275b8;
+    --third_color: #58fff7;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+	height: auto;
+}
+
+html {font-size: 4px;}
+
+:link, :visited { text-decoration:none }
+
+ul,ol { list-style:none }
+
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, p, blockquote, fieldset, input { margin:0; padding:0 }
+
+a img, :link img, :visited img { border:none }
+
+address { font-style:normal }
+
+
+@media all and (min-aspect-ratio: 13/10) {
+    @media all and (min-width: 300px) {
+        html {font-size: 4px;}
+    }
+    @media all and (min-width: 400px) {
+        html {font-size: 6px;}
+    }
+    @media all and (min-width: 500px) {
+        html {font-size: 8px;}
+    }
+    @media all and (min-width: 600px) {
+        html {font-size: 10px;}
+    }
+    @media all and (min-width: 700px) {
+        html {font-size: 12px;}
+    }
+    @media all and (min-width: 800px) {
+        html {font-size: 10px;}
+    }
+    @media all and (min-width: 900px) {
+        html {font-size: 12px;}
+    }
+    @media all and (min-width: 1000px) {
+        html {font-size: 14px;}
+    }
+    @media all and (min-width: 1100px) {
+        html {font-size: 15px;}
+    }
+    @media all and (min-width: 1200px) {
+        html {font-size: 17px;}
+    }
+    @media all and (min-width: 1400px) {
+        html {font-size: 20px;}
+    }
+    @media all and (min-width: 2000px) {
+        html {font-size: 30px;}
+    }
+    @media all and (min-width: 3000px) {
+        html {font-size: 40px;}
+    }
+    @media all and (min-width: 4000px) {
+        html {font-size: 100px;}
+    }
+}
+
+@media all and (max-aspect-ratio: 13/10) {
+    @media all and (min-width: 300px) {
+        html {font-size: 9px;}
+    }
+    @media all and (min-width: 500px) {
+        html {font-size: 12px;}
+    }
+    @media all and (min-width: 700px) {
+        html {font-size: 16px;}
+    }
+    @media all and (min-width: 800px) {
+        html {font-size: 18px;}
+    }
+    @media all and (min-width: 900px) {
+        html {font-size: 20px;}
+    }
+    @media all and (min-width: 1000px) {
+        html {font-size: 25px;}
+    }
+}
