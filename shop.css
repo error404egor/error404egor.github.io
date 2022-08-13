@@ -14,13 +14,6 @@
     margin: 1.5%;
 }
 
-@media all and (max-aspect-ratio: 13/10) {
-    .cards_item {
-        width: 47%;
-        aspect-ratio: 2/3;
-    }
-}
-
 .item_image {
     height: 50%;
     width: auto;
@@ -92,7 +85,7 @@
 
 .cart {
     margin-top: 12vh;
-    height: 90vh;
+    height: 88vh;
     z-index: 9999;
     display: none;
     position: fixed;
@@ -160,4 +153,31 @@ form > button {
     padding: 0.2rem;
     font-size: 1rem;
     border: none;
+}
+
+
+@media all and (max-aspect-ratio: 13/10) {
+    .cards_item {
+        width: 80%;
+        aspect-ratio: 2/3;
+    }
+
+    .cards {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .cards_item > p {
+        font-size: 1.5rem;
+    }
+
+    .cart > form {
+        height: 15vh;
+    }
+
+    /*.cart {
+        height: 78vh;
+    }*/
 }

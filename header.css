@@ -121,10 +121,10 @@ footer > a {
 	}
 
 	header, footer {
-		height: 8vh;
+		height: 10vh;
 	}
 
 	main {
-		margin-top: 8vh;
+		margin-top: 10vh;
 	}
 }
