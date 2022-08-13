@@ -1,0 +1,163 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.cards_item {
+	border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    width: 30%;
+    aspect-ratio: 3/4;
+    background-color: white;
+    padding: 5%;
+    margin: 1.5%;
+}
+
+@media all and (max-aspect-ratio: 13/10) {
+    .cards_item {
+        width: 47%;
+        aspect-ratio: 2/3;
+    }
+}
+
+.item_image {
+    height: 50%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards_item > h1 {
+    min-height: 8%;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.cards_item > p {
+    font-size: 0.8rem;
+    min-height: 30%;
+    text-align: justify;
+}
+
+.item_bottom {
+    padding: 1%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item_cart{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item_cart_logo {
+    height: 50%;
+    width: auto;
+}
+
+.item_cart_add_button, .item_cart_delete_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 25%;
+    font-size: 1rem;
+}
+
+.price::after {
+    content: "$"
+}
+
+.cart_open {
+    background-color: transparent;
+    position: fixed;
+    z-index: 10000;
+    top: calc(100vh - min(10vh, 10vw));
+    left: calc(100vw - min(10vh, 10vw));
+    width: min(10vh, 10vw);
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url(./images/handcart.svg);
+}
+
+.cart {
+    margin-top: 12vh;
+    height: 90vh;
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    overflow-y: scroll;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.cart > table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+tr {
+    height: 10vh;
+}
+
+td {
+    background-color: var(--main_color_light);
+    border-top: 2px solid var(--main_color);
+    border-bottom: 2px solid var(--main_color);
+}
+
+.cart > h1 {
+    text-align: center;
+    background-color: var(--main_color);
+    height: 2.5rem;
+    font-size: 2.3rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.cart > form {
+    height: min(10vh, 10vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0rem;
+    background-color: var(--main_color);
+    padding: 0 10%;
+}
+
+.form_input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Comfortaa', cursive;
+    height: fit-content;
+}
+
+.form_input:focus {
+    outline: none;
+    border-bottom-style: dashed;
+}
+
+form > button {
+    margin-right: calc(min(10vh, 10vw) * 1.2);
+    background-color: var(--main_color_light);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: none;
+}

@@ -2,6 +2,7 @@
 
 :root {
     --main_color: #5b60c7;
+    --main_color_transparent: #5b60c78a;
     --second_color: rgb(195, 0, 255);
     --main_color_dark: #01142F;
     --second_color_dark: darkmagenta;
@@ -10,96 +11,207 @@
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 img {
-	width: 100%;
-	object-fit: cover;
-	height: auto;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
 }
 
-body, html {overflow-x: hidden;}
+html::-webkit-scrollbar {
+    display: none;
+}
 
-html {font-size: 4px;}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
-:link, :visited { text-decoration:none }
+body,
+html {
+    overflow-x: hidden;
+}
 
-ul,ol { list-style:none }
+html {
+    font-size: 4px;
+}
 
-h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+:link,
+:visited {
+    text-decoration: none
+}
 
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, p, blockquote, fieldset, input { margin:0; padding:0 }
+ul,
+ol {
+    list-style: none
+}
 
-a img, :link img, :visited img { border:none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code {
+    font-size: 1em;
+}
 
-address { font-style:normal }
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+body,
+p,
+blockquote,
+fieldset,
+input {
+    margin: 0;
+    padding: 0
+}
+
+a img,
+:link img,
+:visited img {
+    border: none
+}
+
+address {
+    font-style: normal
+}
 
 
 @media all and (min-aspect-ratio: 13/10) {
     @media all and (min-width: 300px) {
-        html {font-size: 4px;}
+        html {
+            font-size: 4px;
+        }
     }
+
     @media all and (min-width: 400px) {
-        html {font-size: 6px;}
+        html {
+            font-size: 6px;
+        }
     }
+
     @media all and (min-width: 500px) {
-        html {font-size: 8px;}
+        html {
+            font-size: 8px;
+        }
     }
+
     @media all and (min-width: 600px) {
-        html {font-size: 10px;}
+        html {
+            font-size: 10px;
+        }
     }
+
     @media all and (min-width: 700px) {
-        html {font-size: 12px;}
+        html {
+            font-size: 12px;
+        }
     }
+
     @media all and (min-width: 800px) {
-        html {font-size: 10px;}
+        html {
+            font-size: 10px;
+        }
     }
+
     @media all and (min-width: 900px) {
-        html {font-size: 12px;}
+        html {
+            font-size: 12px;
+        }
     }
+
     @media all and (min-width: 1000px) {
-        html {font-size: 14px;}
+        html {
+            font-size: 14px;
+        }
     }
+
     @media all and (min-width: 1100px) {
-        html {font-size: 15px;}
+        html {
+            font-size: 15px;
+        }
     }
+
     @media all and (min-width: 1200px) {
-        html {font-size: 17px;}
+        html {
+            font-size: 17px;
+        }
     }
+
     @media all and (min-width: 1400px) {
-        html {font-size: 20px;}
+        html {
+            font-size: 20px;
+        }
     }
+
     @media all and (min-width: 2000px) {
-        html {font-size: 30px;}
+        html {
+            font-size: 30px;
+        }
     }
+
     @media all and (min-width: 3000px) {
-        html {font-size: 40px;}
+        html {
+            font-size: 40px;
+        }
     }
+
     @media all and (min-width: 4000px) {
-        html {font-size: 100px;}
+        html {
+            font-size: 70px;
+        }
     }
 }
 
 @media all and (max-aspect-ratio: 13/10) {
     @media all and (min-width: 300px) {
-        html {font-size: 9px;}
+        html {
+            font-size: 9px;
+        }
     }
+
     @media all and (min-width: 500px) {
-        html {font-size: 12px;}
+        html {
+            font-size: 12px;
+        }
     }
+
     @media all and (min-width: 700px) {
-        html {font-size: 16px;}
+        html {
+            font-size: 16px;
+        }
     }
+
     @media all and (min-width: 800px) {
-        html {font-size: 18px;}
+        html {
+            font-size: 18px;
+        }
     }
+
     @media all and (min-width: 900px) {
-        html {font-size: 20px;}
+        html {
+            font-size: 20px;
+        }
     }
+
     @media all and (min-width: 1000px) {
-        html {font-size: 25px;}
+        html {
+            font-size: 25px;
+        }
     }
 }
