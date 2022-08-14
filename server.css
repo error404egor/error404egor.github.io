@@ -1,0 +1,136 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+main {
+    margin-top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 80%;
+    height: 60vh;
+    border-radius: 0.5rem;
+    margin-bottom: 2vh;
+  }
+  
+.swiper-button-prev, .swiper-button-next{
+    width: 5%;
+}
+
+.swiper-slide {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third_color);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    color: var(--main_color_dark);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: var(--main_color) 0.2rem 0.2rem  0rem;
+}
+
+#slide_1 {
+    background-image: url("./images/swiper_slide_1.jpeg");
+}
+
+#slide_2 {
+    background-image: url("./images/swiper_slide_2.jpeg");
+    color: white;
+}
+
+#slide_3 {
+    background-image: url("./images/swiper_slide_3.jpeg");
+    color: var(--third_color);
+}
+
+.masonry-grid {
+    column-count: 4;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.masonry-grid__item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+.header_img {
+    background-image: url("./images/minecraft_logo.png");
+}
+
+.masonry-grid__item > img {
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    -ms-interpolation-mode: nearest-neighbor;  /* IE */
+    image-rendering: crisp-edges; /* Стандартное свойство */
+}
+
+main > h1, main > h2, main > h3 {
+    color: var(--third_color);
+    text-shadow: black 0.3rem 0.3rem 0rem;
+    padding: min(20vh, 20vw);
+    text-align: center;
+}
+
+main > h1 {
+    font-size: 3rem;
+
+}
+
+main > h2 {
+    font-size: 2rem;
+}
+
+main > h3 {
+    font-size: 1.6rem;
+}
+
+.skate_model {
+    height: 40vh;
+    width: 100%;
+}
+
+.download_link {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.rools_list {
+    list-style-type: square;
+    width: 80%;
+    font-size: 1rem;
+    color: white;
+}
+
+main > p {
+    color: var(--main_color);
+    margin-bottom: min(20vh, 20vw);
+    text-align: center;
+}
+
+main > p > mark {
+    color: var(--main_color);
+}
+
+@media all and (max-aspect-ratio: 13/10) {
+    .swiper {
+        width: 90%;
+        height: min(20vh, 20vw);
+    }
+
+    .masonry-grid {
+        column-count: 2;
+    }
+}

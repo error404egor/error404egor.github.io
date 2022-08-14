@@ -32,7 +32,7 @@ function doArriveTop(element, elementHeight, elementTop) {
 }
 
 function doChangeShadow(element) {
-  element.style.boxShadow = `0px 0px 2rem hsl(${element.getBoundingClientRect().top}, 100%, 50%)`;
+  element.style.boxShadow = `0px 0px 16px hsl(${element.getBoundingClientRect().top}, 100%, 50%)`;
 }
 
 function doChangeTextShadow(element) {
