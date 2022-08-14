@@ -61,10 +61,6 @@ main {
     margin-bottom: 1rem;
 }
 
-.header_img {
-    background-image: url("./images/minecraft_logo.png");
-}
-
 .masonry-grid__item > img {
     image-rendering: -moz-crisp-edges; /* Firefox */
     -ms-interpolation-mode: nearest-neighbor;  /* IE */
@@ -74,7 +70,7 @@ main {
 main > h1, main > h2, main > h3 {
     color: var(--third_color);
     text-shadow: black 0.3rem 0.3rem 0rem;
-    padding: min(20vh, 20vw);
+    padding: min(10vh, 10vw);
     text-align: center;
 }
 
@@ -101,7 +97,7 @@ main > h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     background-color: black;
     border-radius: 1rem;
@@ -116,7 +112,7 @@ main > h3 {
 
 main > p {
     color: var(--main_color);
-    margin-bottom: min(20vh, 20vw);
+    margin-bottom: min(10vh, 10vw);
     text-align: center;
 }
 
@@ -127,7 +123,7 @@ main > p > mark {
 @media all and (max-aspect-ratio: 13/10) {
     .swiper {
         width: 90%;
-        height: min(20vh, 20vw);
+        height: 33vh;
     }
 
     .masonry-grid {
