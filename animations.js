@@ -68,6 +68,13 @@ function animated() {
     const animateds_opacity = document.querySelectorAll(".animated_opacity");
     for (var i = 0; i < animateds_opacity.length; i++) {
       const element = animateds_opacity[i]
+      const elementTop = element.parentNode.getBoundingClientRect().top;
+      const elementHeight = element.parentNode.getBoundingClientRect().height;
+      window.setTimeout(doArrive, 200, element, elementHeight, elementTop);
+    }
+    const animateds_opacity_no_parent = document.querySelectorAll(".animated_opacity_no_parent");
+    for (var i = 0; i < animateds_opacity_no_parent.length; i++) {
+      const element = animateds_opacity_no_parent[i]
       const elementTop = element.getBoundingClientRect().top;
       const elementHeight = element.getBoundingClientRect().height;
       window.setTimeout(doArrive, 200, element, elementHeight, elementTop);

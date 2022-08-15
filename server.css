@@ -90,12 +90,13 @@ main > h3 {
 .skate_model {
     height: 40vh;
     width: 100%;
+    margin-bottom: 5vh;
 }
 
 .download_link {
     width: 80%;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5vh;
     padding: 2rem;
     font-size: 1rem;
     text-align: center;
@@ -108,11 +109,18 @@ main > h3 {
     width: 80%;
     font-size: 1rem;
     color: white;
+    margin-bottom: 25vh;
+}
+
+.rools_list_item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
 }
 
 main > p {
     color: var(--main_color);
-    margin-bottom: min(10vh, 10vw);
+    margin-bottom: 35vh;
     text-align: center;
 }
 
